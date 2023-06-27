@@ -46,8 +46,8 @@ async function fetchReply(){
     //     temperature: 0,
     //     stop: ['\n', '->']
     // })
-    conversationStr += ` ${response.data.choices[0].text} \n`
-    renderTypewriterText(response.data.choices[0].text)
+    conversationStr += ` ${response.reply.choices[0].text} \n`
+    renderTypewriterText(response.reply.choices[0].text)
 }
 
 function renderTypewriterText(text) {
