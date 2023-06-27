@@ -34,7 +34,8 @@ async function fetchReply(){
         body: conversationStr
     })
 
-    console.log(response)
+    const data = await response.json()
+    console.log(data)
 
     // const response = await openai.createCompletion({
     //     model: 'davinci:ft-scrimba-2023-03-30-23-10-03',
