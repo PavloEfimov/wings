@@ -56,7 +56,7 @@ const handler = async (event) => {
             body: JSON.stringify({
                
               // reply: response.data
-              answer: 'hello world'
+              message: 'hello world'
 
             })
         }
